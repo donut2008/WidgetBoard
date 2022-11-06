@@ -8,9 +8,9 @@
     mc:Ignorable="d">
 	<Grid>
 		<StackPanel Orientation="Vertical" Spacing="5" Margin="8">
-			<StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
+			<Grid HorizontalAlignment="Stretch">
 				<TextBlock Style="{StaticResource SubtitleTextBlockStyle}">Recent files</TextBlock>
-				<Button HorizontalAlignment="Right" Margin="8">
+				<Button HorizontalAlignment="Right">
 					<Button.Content>
 						<FontIcon Glyph="&#xE10C;"/>
 					</Button.Content>
@@ -24,7 +24,7 @@
 						</MenuFlyout>
 					</Button.Flyout>
 				</Button>
-			</StackPanel>
+			</Grid>
 		</StackPanel>
 	</Grid>
 </UserControl>

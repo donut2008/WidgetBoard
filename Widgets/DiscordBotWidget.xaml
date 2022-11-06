@@ -8,9 +8,9 @@
     mc:Ignorable="d">
 	<Grid>
 		<StackPanel Orientation="Vertical" Spacing="5" Margin="8">
-			<StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
-				<TextBlock Style="{StaticResource SubtitleTextBlockStyle}">Calculator</TextBlock>
-				<Button HorizontalAlignment="Right" Margin="8">
+			<Grid HorizontalAlignment="Stretch">
+				<TextBlock Style="{StaticResource SubtitleTextBlockStyle}">[discord bot name]</TextBlock>
+				<Button HorizontalAlignment="Right">
 					<Button.Content>
 						<FontIcon Glyph="&#xE10C;"/>
 					</Button.Content>
@@ -24,7 +24,7 @@
 						</MenuFlyout>
 					</Button.Flyout>
 				</Button>
-			</StackPanel>
+			</Grid>
 		</StackPanel>
 	</Grid>
 </UserControl>

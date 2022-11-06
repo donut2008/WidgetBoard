@@ -36,62 +36,62 @@
 					<RowDefinition Height="8*"/> <RowDefinition Height="8*"/> <RowDefinition Height="8*"/>
 					<RowDefinition Height="8*"/> <RowDefinition Height="8*"/> <RowDefinition Height="8*"/>
 				</Grid.RowDefinitions>
-				<Button x:Name="Percent" Grid.Row="0" Grid.Column="0" Margin="1" Content="%" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="Percent_Click"/>
-				<Button x:Name="CE" Grid.Row="0" Grid.Column="1" Margin="1" Content="CE" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="CE_Click"/>
-				<Button x:Name="C" Grid.Row="0" Grid.Column="2" Margin="1" Content="C" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="C_Click"/>
-				<Button x:Name="Backspace" Grid.Row="0" Grid.Column="3" Margin="1" Content="⌫" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="Backspace_Click"/>
-				<Button x:Name="OneByX" Grid.Row="1" Grid.Column="0" Margin="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="OneByX_Click">
+				<Button x:Name="Percent" Grid.Row="0" Grid.Column="0" Margin="2" Content="%" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="Percent_Click"/>
+				<Button x:Name="CE" Grid.Row="0" Grid.Column="1" Margin="2" Content="CE" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="CE_Click"/>
+				<Button x:Name="C" Grid.Row="0" Grid.Column="2" Margin="2" Content="C" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="C_Click"/>
+				<Button x:Name="Backspace" Grid.Row="0" Grid.Column="3" Margin="2" Content="⌫" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="Backspace_Click"/>
+				<Button x:Name="OneByX" Grid.Row="1" Grid.Column="0" Margin="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="OneByX_Click">
 					<Button.Content>
 						<TextBlock><Run Typography.Variants="Superscript">1</Run>/x</TextBlock>
 					</Button.Content>
 				</Button>
-				<Button x:Name="X2" Grid.Row="1" Grid.Column="1" Margin="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="X2_Click">
+				<Button x:Name="X2" Grid.Row="1" Grid.Column="1" Margin="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="X2_Click">
 					<Button.Content>
 						<TextBlock>x<Run Typography.Variants="Superscript">2</Run></TextBlock>
 					</Button.Content>
 				</Button>
-				<Button x:Name="RootX" Grid.Row="1" Grid.Column="2" Margin="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="RootX_Click">
+				<Button x:Name="RootX" Grid.Row="1" Grid.Column="2" Margin="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="RootX_Click">
 					<Button.Content>
 						<FontIcon Glyph="&#xE94B;"/>
 					</Button.Content>
 				</Button>
-				<Button x:Name="Div" Grid.Row="1" Grid.Column="3" Margin="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="Div_Click">
+				<Button x:Name="Div" Grid.Row="1" Grid.Column="3" Margin="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="Div_Click">
 					<Button.Content>
 						<FontIcon Glyph="&#xE94A;"/>
 					</Button.Content>
 				</Button>
-				<Button x:Name="Seven" Grid.Row="2" Grid.Column="0" Margin="1" Content="7" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="Seven_Click"/>
-				<Button x:Name="Eight" Grid.Row="2" Grid.Column="1" Margin="1" Content="8" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="Eight_Click"/>
-				<Button x:Name="Nine" Grid.Row="2" Grid.Column="2" Margin="1" Content="9" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="Nine_Click"/>
-				<Button x:Name="Prod" Grid.Row="2" Grid.Column="3" Margin="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="Prod_Click">
+				<Button x:Name="Seven" Grid.Row="2" Grid.Column="0" Margin="2" Content="7" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="Seven_Click"/>
+				<Button x:Name="Eight" Grid.Row="2" Grid.Column="1" Margin="2" Content="8" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="Eight_Click"/>
+				<Button x:Name="Nine" Grid.Row="2" Grid.Column="2" Margin="2" Content="9" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="Nine_Click"/>
+				<Button x:Name="Prod" Grid.Row="2" Grid.Column="3" Margin="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="Prod_Click">
 					<Button.Content>
 						<FontIcon Glyph="&#xE947;"/>
 					</Button.Content>
 				</Button>
-				<Button x:Name="Four" Grid.Row="3" Grid.Column="0" Margin="1" Content="4" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="Four_Click"/>
-				<Button x:Name="Five" Grid.Row="3" Grid.Column="1" Margin="1" Content="5" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="Five_Click"/>
-				<Button x:Name="Six" Grid.Row="3" Grid.Column="2" Margin="1" Content="6" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="Six_Click"/>
-				<Button x:Name="Sub" Grid.Row="3" Grid.Column="3" Margin="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="Sub_Click">
+				<Button x:Name="Four" Grid.Row="3" Grid.Column="0" Margin="2" Content="4" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="Four_Click"/>
+				<Button x:Name="Five" Grid.Row="3" Grid.Column="1" Margin="2" Content="5" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="Five_Click"/>
+				<Button x:Name="Six" Grid.Row="3" Grid.Column="2" Margin="2" Content="6" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="Six_Click"/>
+				<Button x:Name="Sub" Grid.Row="3" Grid.Column="3" Margin="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="Sub_Click">
 					<Button.Content>
 						<FontIcon Glyph="&#xE949;"/>
 					</Button.Content>
 				</Button>
-				<Button x:Name="One" Grid.Row="4" Grid.Column="0" Margin="1" Content="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="One_Click"/>
-				<Button x:Name="Two" Grid.Row="4" Grid.Column="1" Margin="1" Content="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="Two_Click"/>
-				<Button x:Name="Three" Grid.Row="4" Grid.Column="2" Margin="1" Content="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="Three_Click"/>
-				<Button x:Name="Add" Grid.Row="4" Grid.Column="3" Margin="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="Sub_Click">
+				<Button x:Name="One" Grid.Row="4" Grid.Column="0" Margin="2" Content="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="One_Click"/>
+				<Button x:Name="Two" Grid.Row="4" Grid.Column="1" Margin="2" Content="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="Two_Click"/>
+				<Button x:Name="Three" Grid.Row="4" Grid.Column="2" Margin="2" Content="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="Three_Click"/>
+				<Button x:Name="Add" Grid.Row="4" Grid.Column="3" Margin="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="Sub_Click">
 					<Button.Content>
 						<FontIcon Glyph="&#xE948;"/>
 					</Button.Content>
 				</Button>
-				<Button x:Name="PlMn" Grid.Row="5" Grid.Column="0" Margin="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="Four_Click">
+				<Button x:Name="PlMn" Grid.Row="5" Grid.Column="0" Margin="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="Four_Click">
 					<Button.Content>
 						<FontIcon Glyph="&#xE94D;"/>
 					</Button.Content>
 				</Button>
-				<Button x:Name="Zero" Grid.Row="5" Grid.Column="1" Margin="1" Content="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="Zero_Click"/>
-				<Button x:Name="Dot" Grid.Row="5" Grid.Column="2" Margin="1" Content="." VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="Dot_Click"/>
-				<Button x:Name="Equal" Grid.Row="5" Grid.Column="3" Margin="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="Equal_Click">
+				<Button x:Name="Zero" Grid.Row="5" Grid.Column="1" Margin="2" Content="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="Zero_Click"/>
+				<Button x:Name="Dot" Grid.Row="5" Grid.Column="2" Margin="2" Content="." VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="Dot_Click"/>
+				<Button x:Name="Equal" Grid.Row="5" Grid.Column="3" Margin="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="Equal_Click">
 					<Button.Content>
 						<FontIcon Glyph="&#xE94E;"/>
 					</Button.Content>
