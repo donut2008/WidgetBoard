@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "WidgetBoard (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "WidgetBoard (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+﻿<winex:WindowEx
+	x:Class="WidgetBoard.MainWindow"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:local="using:WidgetBoard"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:winex="using:WinUIEx"
+	xmlns:widgets="using:WidgetBoard.Widgets"
+	mc:Ignorable="d">
+	<winex:WindowEx.Backdrop>
+		<winex:MicaSystemBackdrop/>
+	</winex:WindowEx.Backdrop>
+	<GridView x:Name="WidgetGrid" Loaded="WidgetGrid_Loaded">
+		<GridViewItem x:Name="cw" Background="{ThemeResource SystemAltLowColor}" CornerRadius="8" Margin="8">
+			<widgets:CalcWidget CornerRadius="8"/>
+		</GridViewItem>
+		<GridViewItem x:Name="aw" Background="{ThemeResource SystemAltLowColor}" CornerRadius="8" Margin="8">
+			<widgets:AlarmWidget CornerRadius="8"/>
+		</GridViewItem>
+		<GridViewItem x:Name="calw" Background="{ThemeResource SystemAltLowColor}" CornerRadius="8" Margin="8">
+			<widgets:CalendarWidget CornerRadius="8"/>
+		</GridViewItem>
+		<GridViewItem x:Name="fw" Background="{ThemeResource SystemAltLowColor}" CornerRadius="8" Margin="8">
+			<widgets:FileWidget CornerRadius="8"/>
+		</GridViewItem>
+		<GridViewItem x:Name="dbw" Background="{ThemeResource SystemAltLowColor}" CornerRadius="8" Margin="8">
+			<widgets:DiscordBotWidget/>
+		</GridViewItem>
+	</GridView>
+</winex:WindowEx>
