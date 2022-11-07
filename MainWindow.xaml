@@ -11,21 +11,27 @@
 	<winex:WindowEx.Backdrop>
 		<winex:MicaSystemBackdrop/>
 	</winex:WindowEx.Backdrop>
-	<NavigationView x:Name="NavView" SelectionChanged="NavView_SelectionChanged">
-		<Grid>
-			<Frame x:Name="ContentFrame"/>
-		</Grid>
-		<NavigationView.MenuItems>
-			<NavigationViewItem Content="Widgets panel" Tag="WPan" IsSelected="True">
-				<NavigationViewItem.Icon>
-					<SymbolIcon Symbol="ViewAll"/>
-				</NavigationViewItem.Icon>
-			</NavigationViewItem>
-			<NavigationViewItem Content="Widgets settings" Tag="WSet">
-				<NavigationViewItem.Icon>
-					<SymbolIcon Symbol="Setting"/>
-				</NavigationViewItem.Icon>
-			</NavigationViewItem>
-		</NavigationView.MenuItems>
-	</NavigationView>
+	<Grid>
+		<StackPanel x:Name="AppTitleBar" VerticalAlignment="Top" Orientation="Horizontal" Spacing="8" Margin="0">
+			<Image Source="/Assets/Square44x44Logo.targetsize-24_altform-unplated.png" Height="16" Width="16" Margin="8,8,0,8"/>
+			<TextBlock Style="{StaticResource CaptionTextBlockStyle}" Text="Widgets Dashboard" Margin="0,8,8,8"/>
+		</StackPanel>
+		<NavigationView x:Name="NavView" SelectionChanged="NavView_SelectionChanged" PaneDisplayMode="LeftCompact" Margin="0,32,0,0" IsBackButtonVisible="Collapsed">
+			<Grid>
+				<Frame x:Name="ContentFrame"/>
+			</Grid>
+			<NavigationView.MenuItems>
+				<NavigationViewItem Content="Widgets panel" Tag="WPan" IsSelected="True">
+					<NavigationViewItem.Icon>
+						<SymbolIcon Symbol="ViewAll"/>
+					</NavigationViewItem.Icon>
+				</NavigationViewItem>
+				<NavigationViewItem Content="Widgets settings" Tag="WSet">
+					<NavigationViewItem.Icon>
+						<SymbolIcon Symbol="Setting"/>
+					</NavigationViewItem.Icon>
+				</NavigationViewItem>
+			</NavigationView.MenuItems>
+		</NavigationView>
+	</Grid>
 </winex:WindowEx>

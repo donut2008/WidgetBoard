@@ -7,9 +7,11 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 	<Grid>
-		<StackPanel Orientation="Vertical" Spacing="5">
-			<TextBlock Style="{StaticResource DisplayTextBlockStyle}">Change app settings</TextBlock>
+		<StackPanel Orientation="Vertical" Spacing="5" Margin="8">
+			<TextBlock Style="{StaticResource TitleTextBlockStyle}">Change app settings</TextBlock>
 		</StackPanel>
-		<TextBlock Style="{StaticResource CaptionTextBlockStyle}">Version 1.0.15 [DEBUG]</TextBlock>
+		<TextBlock Margin="8" HorizontalAlignment="Left" VerticalAlignment="Bottom" Style="{StaticResource CaptionTextBlockStyle}">
+			Version 1.0.23 [DEBUG]
+		</TextBlock>
 	</Grid>
 </Page>
