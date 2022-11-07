@@ -13,6 +13,9 @@
   </PropertyGroup>
   <ItemGroup>
     <None Remove="DiscordBotWidget.xaml" />
+    <None Remove="SettingsPage.xaml" />
+    <None Remove="WidgetsPanel.xaml" />
+    <None Remove="WidgetsSettings.xaml" />
     <None Remove="Widgets\AlarmWidget.xaml" />
     <None Remove="Widgets\CalcWidget.xaml" />
     <None Remove="Widgets\CalendarWidget.xaml" />
@@ -44,6 +47,21 @@
   -->
   <ItemGroup Condition="'$(DisableMsixProjectCapabilityAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
     <ProjectCapability Include="Msix" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="WidgetsSettings.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="SettingsPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="WidgetsPanel.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Widgets\DiscordBotWidget.xaml">

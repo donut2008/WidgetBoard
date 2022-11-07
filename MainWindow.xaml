@@ -11,21 +11,21 @@
 	<winex:WindowEx.Backdrop>
 		<winex:MicaSystemBackdrop/>
 	</winex:WindowEx.Backdrop>
-	<GridView x:Name="WidgetGrid" Loaded="WidgetGrid_Loaded">
-		<GridViewItem x:Name="cw" Background="{ThemeResource SystemAltLowColor}" CornerRadius="8" Margin="8">
-			<widgets:CalcWidget CornerRadius="8"/>
-		</GridViewItem>
-		<GridViewItem x:Name="aw" Background="{ThemeResource SystemAltLowColor}" CornerRadius="8" Margin="8">
-			<widgets:AlarmWidget CornerRadius="8"/>
-		</GridViewItem>
-		<GridViewItem x:Name="calw" Background="{ThemeResource SystemAltLowColor}" CornerRadius="8" Margin="8">
-			<widgets:CalendarWidget CornerRadius="8"/>
-		</GridViewItem>
-		<GridViewItem x:Name="fw" Background="{ThemeResource SystemAltLowColor}" CornerRadius="8" Margin="8">
-			<widgets:FileWidget CornerRadius="8"/>
-		</GridViewItem>
-		<GridViewItem x:Name="dbw" Background="{ThemeResource SystemAltLowColor}" CornerRadius="8" Margin="8">
-			<widgets:DiscordBotWidget/>
-		</GridViewItem>
-	</GridView>
+	<NavigationView x:Name="NavView" SelectionChanged="NavView_SelectionChanged">
+		<Grid>
+			<Frame x:Name="ContentFrame"/>
+		</Grid>
+		<NavigationView.MenuItems>
+			<NavigationViewItem Content="Widgets panel" Tag="WPan" IsSelected="True">
+				<NavigationViewItem.Icon>
+					<SymbolIcon Symbol="ViewAll"/>
+				</NavigationViewItem.Icon>
+			</NavigationViewItem>
+			<NavigationViewItem Content="Widgets settings" Tag="WSet">
+				<NavigationViewItem.Icon>
+					<SymbolIcon Symbol="Setting"/>
+				</NavigationViewItem.Icon>
+			</NavigationViewItem>
+		</NavigationView.MenuItems>
+	</NavigationView>
 </winex:WindowEx>
